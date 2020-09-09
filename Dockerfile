@@ -11,7 +11,7 @@ COPY . .
 # Using go get.
 RUN go get -d -v
 # Build the binary.
-RUN GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o /go/bin/hello
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o /go/bin/hello
 ############################
 # STEP 2 build a small image
 ############################
