@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "default-route-openshift-image-registry.apps.cpat-tf.ocp.csplab.local/image-reg-testing/test"
+    imagename = "default-route-openshift-image-registry.apps.cpat-tf.ocp.csplab.local/image-reg-testing/go-api"
     registryCredential = 'ocp-internal-registry'
     dockerImage = ''
   }
