@@ -1,6 +1,3 @@
-def gitrepository = "${OPTION_GIT_REPOSITORY}"
-def gitcredentials = "${OPTION_GIT_CREDENTIALS}"
-def gitbranch = "${OPTION_GIT_BRANCH}"
 def imagerepository = "https://${OPTION_NEXUS_REPOSITORY}/"
 def repocredentials = "${OPTION_NEXUS_CREDENTIALS}"
 
