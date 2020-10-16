@@ -22,7 +22,7 @@ pipeline {
     stage('Deploy Image') {
       steps{
         script {
-          docker.withRegistry( '', registryCredential ) {
+          docker.withRegistry( 'default-route-openshift-image-registry.apps.cpat-tf.ocp.csplab.local/image-reg-testing/go-api', registryCredential ) {
             dockerImage.push("$BUILD_NUMBER")
             dockerImage.push('latest')
 
